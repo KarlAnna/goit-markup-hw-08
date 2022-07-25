@@ -1,0 +1,52 @@
+.chackbox-field {
+    display: inline-flex;
+    flex-direction: row-reverse;
+    align-items: baseline;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+    &__lable {
+        color: $text-color;
+        font-size: 14px;
+        line-height: 0.55;
+        letter-spacing: 0.03em;
+    }
+
+    &__link {
+        color: $accent-color;
+    }
+}
+
+.checkbox {
+    position: relative;
+    width: 16px;
+    height: 15px;
+    border: 2px solid $title-color;
+    border-radius: 2px;
+    box-shadow: 0px 0px 1.5px $title-color;
+
+    float: left;
+    margin-left: 12px;
+    margin-top: 1px;
+
+    cursor: pointer;
+
+    &__icon {
+        position: absolute;
+        top: -2px;
+        left: -2px;
+
+        fill: white;
+        background-color: $accent-color;
+        border-radius: 2px;
+
+        opacity: 0;
+        transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+
+.checkbox__input:checked + .checkbox__icon {
+    opacity: 1;
+}

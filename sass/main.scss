@@ -1,0 +1,49 @@
+/* UTILS */
+@import './utils/vars';
+@import './utils/normalize';
+
+/* HEADER */
+@import './components/header/header-inner';
+@import './components/header/logo-header';
+@import './components/header/nav';
+@import './components/header/menu-nav';
+@import './components/header/hr';
+
+/* MAIN-STUDIO */
+@import './components/main-studio/hero-section';
+@import './components/main-studio/hidden-title';
+@import './components/main-studio/char-section';
+@import './components/main-studio/wwd-section';
+@import './components/main-studio/ot-section';
+@import './components/main-studio/clients-section';
+
+/* MODAL */
+@import './components/modal/modal';
+@import './components/modal/fieldset-item';
+@import './components/modal/checkbox';
+@import './components/modal/is-hidden';
+
+/* MAIN-PORTFOLIO */
+@import './components/main-portfolio/filters-list';
+@import './components/main-portfolio/projects';
+
+/* FOOTER */
+@import './components/footer/footer-inner';
+@import './components/footer/logo-footer';
+@import './components/footer/footer-section';
+@import './components/footer/footer-address';
+@import './components/footer/footer-icon-list';
+
+/* BTNS */
+@import './components/btns/order-btn';
+@import './components/btns/subscribe-btn';
+@import './components/btns/close-btn';
+@import './components/btns/send-btn';
+
+/* LAYOUTS */
+@import './layouts/body';
+@import './layouts/container';
+@import './layouts/main';
+@import './layouts/section';
+@import './layouts/footer';
+@import './layouts/backdrop';

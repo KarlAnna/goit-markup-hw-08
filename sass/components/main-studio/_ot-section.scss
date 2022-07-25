@@ -1,0 +1,73 @@
+.ot__section {
+    background-color: $bg-color-whitish;
+    padding: 94px 0;
+}
+
+.ot-list {
+    &__item {
+        background-color: white;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
+
+        display: inline-block;
+        width: 267px;
+        height: 428px;
+        margin-right: 30px;
+
+        &:nth-child(4) {
+            margin-right: 0;
+        }
+    }
+}
+
+.ot-list-text {
+    padding: 30px 0;
+
+    &__name {
+        color: $title-color;
+
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.2;
+        text-align: center;
+        letter-spacing: 0.03em;
+
+        margin-bottom: 10px;
+    }
+
+    &__post {
+        color: $text-color;
+
+        font-size: 16px;
+        line-height: 1.2;
+        text-align: center;
+        letter-spacing: 0.03em;
+    }
+}
+
+.ot-icon-list {
+    display: flex;
+    justify-content: center;
+    height: 45px;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+
+    &__link {
+        fill: $icon-color;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover, &:focus {
+            background-color: $accent-color;
+            fill: white;
+}
+    }
+
+    &__icon {
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}

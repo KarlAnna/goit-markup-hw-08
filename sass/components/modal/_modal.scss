@@ -1,0 +1,26 @@
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 528px;
+    max-height: 570px;
+    height: 100%;
+    padding: 40px;
+    background-color: white;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+
+    transform: translate(-50%, -50%);
+
+    .modal__title {
+        color: $title-color;
+        height: 23px;
+        font-size: 20px;
+        line-height: 0.85;
+        letter-spacing: 0.03em;
+        text-align: center;
+
+        margin-bottom: 12px;
+    }
+}
