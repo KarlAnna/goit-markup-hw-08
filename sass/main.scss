@@ -3,7 +3,7 @@
 @import './utils/normalize';
 
 /* HEADER */
-@import './components/header/header-inner';
+@import './components/header/header-address';
 @import './components/header/logo-header';
 @import './components/header/nav';
 @import './components/header/menu-nav';
@@ -11,7 +11,7 @@
 
 /* MAIN-STUDIO */
 @import './components/main-studio/hero-section';
-@import './components/main-studio/hidden-title';
+@import './components/main-studio/section-title';
 @import './components/main-studio/char-section';
 @import './components/main-studio/wwd-section';
 @import './components/main-studio/ot-section';
@@ -43,6 +43,7 @@
 /* LAYOUTS */
 @import './layouts/body';
 @import './layouts/container';
+@import './layouts/header';
 @import './layouts/main';
 @import './layouts/section';
 @import './layouts/footer';

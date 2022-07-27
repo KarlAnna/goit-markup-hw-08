@@ -1,16 +1,16 @@
 .wwd-section {
-    padding-bottom: 94px;
+    padding-bottom: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .wwd-list {
     &__item {
         position: relative;
-        display: inline-block;
-        margin-right: 30px;
-
-        &:nth-child(3) {
-            margin-right: 0;
-        }
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
     }
 
     &__img-title {

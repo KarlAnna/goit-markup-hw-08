@@ -2,13 +2,12 @@
     color: $title-color;
 
     font-weight: 700;
-    font-size: 36px;
+    font-size: 28px;
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
 
+    display: flex;
     max-width: 400px;
-    height: 42px;
-    margin-left: 395px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }

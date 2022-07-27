@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebStudio</title>
 
-    <!-- <link rel="stylesheet" href="./css/modern-normalize.css">
-    <link rel="stylesheet" href="./css/styles.css"> -->
     <link rel="stylesheet" href="./css/main.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,8 +13,8 @@
         rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="container, header-inner">
+    <header class="header">
+        <div class="container, header__inner">
             <a class="logo-header" href="./index.html"><span class="logo-header__first-word">Web</span>Studio</a>
             <nav>
                 <ul class="menu-nav">
@@ -25,16 +23,18 @@
                     <li><a class="menu-nav__link" href="#">Контакти</a></li>
                 </ul>
             </nav>
-            <a class="header-inner__address-link" href="mailto:info@devstudio.com">
-                <svg class="header-inner__address-icon" width="22" height="16" aria-label="Ссылка на електронную почту">
-                    <use href="./images/icons.svg#envelope" x="-3" y="2"></use>
-                </svg>
-                info@devstudio.com</a>
-            <a class="header-inner__address-link" href="tel:+380961111111">
-                <svg class="header-inner__address-icon" width="20" height="16" aria-label="Ссылка на мобильный номер">
-                    <use href="./images/icons.svg#smartphone" x="-3" y="0.45"></use>
-                </svg>
-                +38 096 111 11 11</a>
+            <div class="header-address">
+                <a class="header-address__link" href="mailto:info@devstudio.com">
+                    <svg class="header-address__icon" width="22" height="16" aria-label="Ссылка на електронную почту">
+                        <use href="./images/icons.svg#envelope" x="-3" y="2"></use>
+                    </svg>
+                    info@devstudio.com</a>
+                <a class="header-address__link" href="tel:+380961111111">
+                    <svg class="header-address__icon" width="20" height="16" aria-label="Ссылка на мобильный номер">
+                        <use href="./images/icons.svg#smartphone" x="-3" y="0.45"></use>
+                    </svg>
+                    +38 096 111 11 11</a>
+            </div>
         </div>
         <hr>
     </header>
@@ -48,7 +48,7 @@
         <section class="section char-section">
             <div class="container">
                 <h2 class="hidden-title">Особливості</h2>
-                <ul class="char-icon-list">
+                <!-- <ul class="char-icon-list">
                     <li class="char-icon-list__item">
                         <svg class="char-icon-list__icon" width="270" height="120">
                             <use href="./images/icons.svg#antenna" width="70" x="100"></use>
@@ -69,27 +69,39 @@
                             <use href="./images/icons.svg#astronaut" width="70" x="100"></use>
                         </svg>
                     </li>
-                </ul>
+                </ul> -->
                 <ul class="char-list">
                     <li class="char-list__item">
+                        <svg class="char-list__icon" height="120">
+                            <use href="./images/icons.svg#antenna" width="70"></use>
+                        </svg>
                         <h3 class="char-list__title">УВАГА ДО ДЕТАЛЕЙ</h3>
                         <p class="char-list__text">
                             Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
                         </p>
                     </li>
                     <li class="char-list__item">
+                        <svg class="char-list__icon" height="120">
+                            <use href="./images/icons.svg#clock" width="70"></use>
+                        </svg>
                         <h3 class="char-list__title">ПУНКТУАЛЬНІСТЬ</h3>
                         <p class="char-list__text">
                             Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
                         </p>
                     </li>
                     <li class="char-list__item">
+                        <svg class="char-list__icon" height="120">
+                            <use href="./images/icons.svg#diagram" width="70"></use>
+                        </svg>
                         <h3 class="char-list__title">ПЛАНУВАННЯ</h3>
                         <p class="char-list__text">
                             Так само консультація з широким активом значною мірою зумовлює.
                         </p>
                     </li>
                     <li class="char-list__item">
+                        <svg class="char-list__icon" height="120">
+                            <use href="./images/icons.svg#astronaut" width="70"></use>
+                        </svg>
                         <h3 class="char-list__title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
                         <p class="char-list__text">
                             Значимість цих проблем настільки очевидна, що реалізація планових завдань.
@@ -126,7 +138,7 @@
                         <div class="ot-list-text">
                             <h3 class="ot-list-text__name">Ігор Дем'яненко</h3>
                             <p class="ot-list-text__post">Product Designer</p>
-                            <ul class="ot-icon-list">
+                            <ul class="ot-list">
                                 <li>
                                     <a class="ot-icon-list__link" href="https://www.instagram.com/">
                                         <svg class="ot-icon-list__icon" width="44" height="44">
@@ -433,5 +445,6 @@
         </div>
     </div>
     <script src="./modal.js"></script>
+    <script src="./mobile-menu.js"></script>
 </body>
 </html>

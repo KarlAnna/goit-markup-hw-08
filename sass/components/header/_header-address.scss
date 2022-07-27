@@ -1,0 +1,32 @@
+.header-address {
+    display: none;
+    // display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+
+
+    &__link {
+            color: $text-color;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 1.15;
+            letter-spacing: 0.02em;
+    
+            transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+            &:hover,
+            &:focus {
+                color: $accent-color;
+            }
+        }
+    
+        &__icon {
+            fill: $text-color;
+        }
+    
+        &__link:hover &__icon,
+        &__link:focus &__icon {
+            fill: currentColor;
+        }
+}
