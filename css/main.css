@@ -338,12 +338,6 @@ hr {
           align-items: center;
   gap: 30px;
 }
-.char-list__icon {
-  background-color: #f5f4fa;
-  width: 100%;
-  padding: 0 43%;
-  margin-bottom: 30px;
-}
 .char-list__title {
   color: #212121;
   font-weight: 700;
@@ -366,6 +360,25 @@ hr {
   line-height: 1.7;
   letter-spacing: 0.03em;
   width: 100%;
+}
+
+.char-field {
+  background-color: #f5f4fa;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 120px;
+  margin-bottom: 30px;
+}
+.char-field__icon {
+  width: 70px;
+  height: 70px;
 }
 
 .wwd-section {
@@ -490,6 +503,10 @@ hr {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 30px;
 }
 .clients-icon-list__link {
@@ -511,7 +528,9 @@ hr {
 .clients-icon-list__link:hover, .clients-icon-list__link:focus {
   fill: #2196f3;
   border-color: #2196f3;
-} /* MODAL */
+}
+
+/* MODAL */
 .modal {
   position: absolute;
   top: 50%;
@@ -1033,6 +1052,7 @@ footer {
   background-color: #2f303a;
   font-style: normal;
   padding: 60px 0;
+  display: none;
 }
 
 .backdrop {

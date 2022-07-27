@@ -1,5 +1,6 @@
 .clients-icon-list {
     display: flex;
+    flex-direction: column;
     gap: 30px;
 
     &__link {
