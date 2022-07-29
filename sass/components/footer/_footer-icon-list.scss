@@ -1,6 +1,10 @@
 .footer-icon-list {
-    display: flex;
+    @include flex-center;
     gap: 10px;
+
+    @media screen and (min-width: 1200px) {
+        justify-content: left;
+    }
 
     &__link {
         fill: white;
@@ -9,7 +13,7 @@
         height: 44px;
         border-radius: 50%;
 
-        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: $fill-transition, $bg-color-transition;
 
         &:hover,
         &:focus {

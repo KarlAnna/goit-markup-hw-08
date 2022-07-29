@@ -1,5 +1,12 @@
 .footer-inner {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
+    @include flex-center;
+    text-align: center;
+    flex-wrap: wrap;
+    
+    @media screen and (min-width: 1200px) {
+        align-items: baseline;
+        justify-content: start;
+        text-align: left;
+        align-items: start;
+    }
 }

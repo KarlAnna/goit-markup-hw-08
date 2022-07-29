@@ -3,7 +3,8 @@
     top: 50%;
     left: 50%;
 
-    width: 528px;
+    width: 100%;
+    max-width: 528px;
     max-height: 570px;
     height: 100%;
     padding: 40px;
@@ -15,7 +16,7 @@
 
     .modal__title {
         color: $title-color;
-        height: 23px;
+        max-height: 60px;
         font-size: 20px;
         line-height: 0.85;
         letter-spacing: 0.03em;

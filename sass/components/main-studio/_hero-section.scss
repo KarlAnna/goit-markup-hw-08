@@ -7,9 +7,7 @@
     width: 100%;
     max-width: 1600px;
     height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center;
 
     &__title {
             color: white;
@@ -21,10 +19,6 @@
             letter-spacing: 0.06em;
             text-transform: uppercase;
     
-            // width: 696px;
-            // margin: 118px auto 30px auto;
-            // margin: auto;
             margin-bottom: 30px;
-            // margin-top: 118px;
         }
 }
