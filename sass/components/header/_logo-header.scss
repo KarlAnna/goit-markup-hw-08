@@ -1,5 +1,6 @@
 .logo-header {
     color: black;
+    @include flex-center;
 
     font-family: $logo-font;
     font-weight: 700;

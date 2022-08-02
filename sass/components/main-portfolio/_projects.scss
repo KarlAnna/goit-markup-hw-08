@@ -4,10 +4,15 @@
     flex-wrap: wrap;
     gap: 30px;
 
+    @media screen and (max-width: 768px) {
+        justify-content: center;
+    }
+
     &__item {
         border: 1px solid #eeeeee;
-        width: 450px;
-        height: 404px;
+        width: 370px;
+        height: 100%;
+        max-height: 404px;
 
         transition: $box-shadow-transition;
 

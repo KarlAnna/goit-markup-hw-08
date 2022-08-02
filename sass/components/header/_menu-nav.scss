@@ -1,8 +1,13 @@
 .menu-nav {
-    display: flex;
+    display: none;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
 
     &__link {
         color: $title-color;
+        position: relative;
 
         font-weight: 500;
         font-size: 14px;
@@ -10,7 +15,6 @@
         letter-spacing: 0.02em;
         margin: 0 25px;
 
-        position: relative;
         transition: $color-transition, $bg-color-transition;
 
         &:hover,
@@ -40,7 +44,11 @@
             height: 4px;
             border-radius: 2px;
             background-color: currentColor;
-            bottom: -35px;
+            bottom: -45px;
+
+            @media screen and (min-width: 1200px) {
+                bottom: -30px;
+            }
         }
     }
 }

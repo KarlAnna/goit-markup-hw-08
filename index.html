@@ -16,24 +16,57 @@
     <header class="header">
         <div class="container, header__inner">
             <a class="logo-header" href="./index.html"><span class="logo-header__first-word">Web</span>Studio</a>
-            <nav>
-                <ul class="menu-nav">
-                    <li><a class="menu-nav__link-current" href="./index.html">Студія</a></li>
-                    <li><a class="menu-nav__link" href="./portfolio.html">Портфоліо</a></li>
-                    <li><a class="menu-nav__link" href="#">Контакти</a></li>
+            <button class="menu-btn" type="button" data-mobile-menu-open>
+                <svg class="menu-btn__icon" width="40" height="40">
+                    <use href="./images/icons.svg#menu"></use>
+                </svg>
+            </button>
+            <!-- <div class="header__desktop-menu"> -->
+                <nav class="header__desktop-nav">
+                    <ul class="menu-nav">
+                        <li><a class="menu-nav__link-current" href="./index.html">Студія</a></li>
+                        <li><a class="menu-nav__link" href="./portfolio.html">Портфоліо</a></li>
+                        <li><a class="menu-nav__link" href="#">Контакти</a></li>
+                    </ul>
+                </nav>
+                <div class="header-address">
+                    <a class="header-address__link" href="mailto:info@devstudio.com">
+                        <svg class="header-address__icon" width="22" height="16" aria-label="Посилання на електронну пошту">
+                            <use href="./images/icons.svg#envelope" x="-3" y="2"></use>
+                        </svg>
+                        info@devstudio.com</a>
+                    <a class="header-address__link" href="tel:+380961111111">
+                        <svg class="header-address__icon" width="20" height="16" aria-label="Посилання на мобільний номер">
+                            <use href="./images/icons.svg#smartphone" x="-3" y="0.45"></use>
+                        </svg>
+                        +38 096 111 11 11</a>
+                </div>
+            <!-- </div> -->
+            <div class="mobile-menu is-hidden" data-mobile-menu>
+                <button class="close-btn" type="button" data-mobile-menu-close>
+                    <svg class="close-btn__icon" width="11" height="11">
+                        <use href="./images/icons.svg#close"></use>
+                    </svg>
+                </button>
+                <nav>
+                    <ul class="mobile-menu__list">
+                        <li><a class="mobile-menu__link" href="./index.html">Студія</a></li>
+                        <li><a class="mobile-menu__link" href="./portfolio.html">Портфоліо</a></li>
+                        <li><a class="mobile-menu__link" href="#">Контакти</a></li>
+                    </ul>
+                </nav>
+                <div class="mobile-menu__address">
+                    <a class="mobile-menu__tel" href="tel:+380961111111">
+                        +38 096 111 11 11</a>
+                    <a class="mobile-menu__mail" href="mailto:info@devstudio.com">
+                        info@devstudio.com</a>
+                </div>
+                <ul class="mobile-menu__socials-list">
+                    <li><a class="mobile-menu__socials-link" href="https://www.instagram.com/">Instagram <span class="vertical-line">|</span></a></li>
+                    <li><a class="mobile-menu__socials-link" href="https://www.twitter.com/">Twitter <span class="vertical-line">|</span></a></li>
+                    <li><a class="mobile-menu__socials-link" href="https://www.facebook.com/">Facebook <span class="vertical-line">|</span></a></li>
+                    <li><a class="mobile-menu__socials-link" href="https://www.linkedin.com/">LinkedIn</a></li>
                 </ul>
-            </nav>
-            <div class="header-address">
-                <a class="header-address__link" href="mailto:info@devstudio.com">
-                    <svg class="header-address__icon" width="22" height="16" aria-label="Ссылка на електронную почту">
-                        <use href="./images/icons.svg#envelope" x="-3" y="2"></use>
-                    </svg>
-                    info@devstudio.com</a>
-                <a class="header-address__link" href="tel:+380961111111">
-                    <svg class="header-address__icon" width="20" height="16" aria-label="Ссылка на мобильный номер">
-                        <use href="./images/icons.svg#smartphone" x="-3" y="0.45"></use>
-                    </svg>
-                    +38 096 111 11 11</a>
             </div>
         </div>
         <hr>
@@ -102,15 +135,15 @@
                 <h2 class="section-title">Чим ми займаємося</h2>
                 <ul class="wwd-list">
                     <li class="wwd-list__item">
-                        <img src="./images/box1.jpg" alt="Десктопные приложения" width="365" height="295">
+                        <img srcset="./images/box1@2x.jpg 2x" src="./images/box1.jpg" alt="Десктопні додатки" width="365" height="295">
                         <h3 class="wwd-list__img-title">Десктопні додатки</h3>
                         </li>
                     <li class="wwd-list__item">
-                        <img src="./images/box2.jpg" alt="Мобильные приложения" width="365" height="295">
+                        <img src="./images/box2.jpg" alt="Мобільні додатки" width="365" height="295">
                         <h3 class="wwd-list__img-title">Мобільні додатки</h3>
                     </li>
                     <li class="wwd-list__item">
-                        <img src="./images/box3.jpg" alt="Дизайнерские решения" width="365" height="295">
+                        <img src="./images/box3.jpg" alt="Дизайнерські рішення" width="365" height="295">
                         <h3 class="wwd-list__img-title">Дизайнерські рішення</h3>
                     </li>
                 </ul>
@@ -121,7 +154,7 @@
                 <h2 class="section-title">Наша команда</h2>
                 <ul class="ot-list">
                     <li class="ot-list__item">
-                        <img src="./images/teamcard1.jpg" alt="Дизайнер">
+                        <img srcset="./images/teamcard1@2x.jpg 2x" src="./images/teamcard1.jpg" alt="Дизайнер">
                         <div class="ot-list-text">
                             <h3 class="ot-list-text__name">Ігор Дем'яненко</h3>
                             <p class="ot-list-text__post">Product Designer</p>
@@ -158,7 +191,7 @@
                         </div>
                     </li>
                     <li class="ot-list__item">
-                        <img src="./images/teamcard2.jpg" alt="FrontEnd розробник" width="100%" height="100%">
+                        <img srcset="./images/teamcard2@2x.jpg 2x" src="./images/teamcard2.jpg" alt="FrontEnd розробник" width="100%" height="100%">
                         <div class="ot-list-text">
                             <h3 class="ot-list-text__name">Ольга Репіна</h3>
                             <p class="ot-list-text__post">Frontend Developer</p>
@@ -195,7 +228,7 @@
                         </div>
                     </li>
                     <li class="ot-list__item">
-                        <img src="./images/teamcard3.jpg" alt="Маркетолог" width="100%" height="100%">
+                        <img srcset="./images/teamcard3@2x.jpg 2x" src="./images/teamcard3.jpg" alt="Маркетолог" width="100%" height="100%">
                         <div class="ot-list-text">
                             <h3 class="ot-list-text__name">Микола Тарасов</h3>
                             <p class="ot-list-text__post">Marketing</p>
@@ -232,7 +265,7 @@
                         </div>
                     </li>
                     <li class="ot-list__item">
-                        <img src="./images/teamcard4.jpg" alt="UI дизайнер" width="100%" height="100%">
+                        <img srcset="./images/teamcard4@2x.jpg 2x" src="./images/teamcard4.jpg" alt="UI дизайнер" width="100%" height="100%">
                         <div class="ot-list-text">
                             <h3 class="ot-list-text__name">Михайло Єрмаков</h3>
                             <p class="ot-list-text__post">UI Designer</p>
