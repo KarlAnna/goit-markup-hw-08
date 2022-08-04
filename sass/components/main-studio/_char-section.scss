@@ -11,6 +11,15 @@
     margin: -1px;
 }
 
+.char-section {
+    padding: 60px 0;
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 90px;
+        padding-bottom: 0;
+    }
+}
+
 .char-list {
     display: flex;
     justify-content: center;
@@ -39,8 +48,6 @@
         letter-spacing: 0.03em;
         text-transform: uppercase;
 
-        display: flex;
-        justify-content: center;
         margin-bottom: 10px;
     }
 

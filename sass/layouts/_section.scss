@@ -1,4 +1,4 @@
-.section {
+.section:not(.char-section) {
     padding: 60px 0;
 
     @media screen and (min-width: 1200px) {

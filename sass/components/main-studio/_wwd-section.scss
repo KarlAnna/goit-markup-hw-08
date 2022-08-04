@@ -1,6 +1,10 @@
 .wwd-section {
-    padding-bottom: 60px;
-    @include flex-center;
+    display: none;
+
+    @media screen and (min-width: 1200px) {
+        padding-bottom: 60px;
+        @include flex-center;
+    }
 }
 
 .wwd-list {
