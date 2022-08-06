@@ -1,6 +1,6 @@
 .projects-list {
     background-color: white;
-    @include flex-center;
+    display: flex;
     flex-wrap: wrap;
     gap: 30px;
 
