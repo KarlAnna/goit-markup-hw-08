@@ -1,12 +1,17 @@
 .header-inner {
     display: flex;
+    gap: 81px;
     width: 100%;
     max-width: 1200px;
-    margin: 0 auto;
-    padding: 16px 15px;
+    height: 60px;
+
+    @media screen and (min-width: 768px) {
+        height: 80px;
+    }
 
     @media screen and (min-width: 1200px) {
         padding: 20px 15px;
+        gap: 95px;
     }
 
     &__address-link {

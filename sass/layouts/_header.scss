@@ -4,12 +4,11 @@
         display: none;
 
         @media screen and (min-width: 768px) {
-            display: block;
+            display: flex;
         }
     }
 
     &__desktop-nav {
-        margin: auto;
-        margin-left: 94px;
+        margin: auto 0;
     }
 }

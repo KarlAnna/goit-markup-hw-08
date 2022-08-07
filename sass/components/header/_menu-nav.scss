@@ -3,6 +3,7 @@
 
     @media screen and (min-width: 768px) {
         display: flex;
+        gap: 50px;
     }
 
     &__link {
@@ -13,7 +14,7 @@
         font-size: 14px;
         line-height: 1.15;
         letter-spacing: 0.02em;
-        margin: 0 25px;
+        // margin: 0 25px;
 
         transition: $color-transition, $bg-color-transition;
 
@@ -34,7 +35,7 @@
         font-size: 14px;
         line-height: 1.15;
         letter-spacing: 0.02em;
-        margin: 0 25px;
+        // margin: 0 25px;
 
         position: relative;
         transition: $color-transition, $bg-color-transition;
