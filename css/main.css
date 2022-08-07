@@ -457,12 +457,7 @@ summary {
   height: 4px;
   border-radius: 2px;
   background-color: currentColor;
-  bottom: -35px;
-}
-@media screen and (min-width: 1200px) {
-  .menu-nav__link-current:after {
-    bottom: -35px;
-  }
+  bottom: -37px;
 }
 
 hr {
