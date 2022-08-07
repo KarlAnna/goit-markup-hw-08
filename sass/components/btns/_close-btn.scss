@@ -15,11 +15,20 @@
         fill: $accent-color;
     }
 
+    @media screen and (max-width: 1200px) {
+        border: none;
+    }
+
     &__icon {
         position: absolute;
         width: 11px;
         height: 11px;
         top: 33%;
         left: 33%;
+
+        @media screen and (max-width: 1200px) {
+            width: 18px;
+            height: 18px;
+        }
     }
 }

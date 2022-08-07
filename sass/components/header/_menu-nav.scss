@@ -21,6 +21,10 @@
         &:focus {
             color: $accent-color;
         }
+
+        @media screen and (min-width: 768px) {
+            line-height: 0.8;
+        }
     }
 
     &__link-current {
@@ -35,6 +39,10 @@
         position: relative;
         transition: $color-transition, $bg-color-transition;
 
+        @media screen and (min-width: 768px) {
+            line-height: 0.8;
+        }
+
         &:after {
             content: '';
             position: absolute;
@@ -44,10 +52,10 @@
             height: 4px;
             border-radius: 2px;
             background-color: currentColor;
-            bottom: -45px;
+            bottom: -35px;
 
             @media screen and (min-width: 1200px) {
-                bottom: -30px;
+                bottom: -35px;
             }
         }
     }

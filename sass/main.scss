@@ -3,10 +3,10 @@
 @import './utils/normalize';
 
 /* HEADER */
+@import './components/header/header-inner';
 @import './components/header/mobile-menu';
 @import './components/header/header-address';
 @import './components/header/logo-header';
-@import './components/header/nav';
 @import './components/header/menu-nav';
 @import './components/header/hr';
 

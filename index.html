@@ -14,7 +14,7 @@
 </head>
 <body>
     <header class="header">
-        <div class="container header__inner">
+        <div class="header-inner">
             <a class="logo-header" href="./index.html"><span class="logo-header__first-word">Web</span>Studio</a>
             <button class="menu-btn" type="button" data-mobile-menu-open>
                 <svg class="menu-btn__icon" width="40" height="40">
@@ -48,25 +48,30 @@
                         <use href="./images/icons.svg#close"></use>
                     </svg>
                 </button>
-                <nav>
-                    <ul class="mobile-menu__list">
-                        <li><a class="mobile-menu__link" href="./index.html">Студія</a></li>
-                        <li><a class="mobile-menu__link" href="./portfolio.html">Портфоліо</a></li>
-                        <li><a class="mobile-menu__link" href="#">Контакти</a></li>
+                <div class="mobile-menu__container">
+                    <!-- <nav> -->
+                        <ul class="mobile-menu__list">
+                            <li><a class="mobile-menu__link-current" href="./index.html">Студія</a></li>
+                            <li><a class="mobile-menu__link" href="./portfolio.html">Портфоліо</a></li>
+                            <li><a class="mobile-menu__link" href="#">Контакти</a></li>
+                        </ul>
+                    <!-- </nav> -->
+                    <div class="mobile-menu__address">
+                        <a class="mobile-menu__tel" href="tel:+380961111111">
+                            +38 096 111 11 11</a>
+                        <a class="mobile-menu__mail" href="mailto:info@devstudio.com">
+                            info@devstudio.com</a>
+                    </div>
+                    <ul class="mobile-menu__socials-list">
+                        <li><a class="mobile-menu__socials-link" href="https://www.instagram.com/">Instagram <span
+                                    class="vertical-line">|</span></a></li>
+                        <li><a class="mobile-menu__socials-link" href="https://www.twitter.com/">Twitter <span
+                                    class="vertical-line">|</span></a></li>
+                        <li><a class="mobile-menu__socials-link" href="https://www.facebook.com/">Facebook <span
+                                    class="vertical-line">|</span></a></li>
+                        <li><a class="mobile-menu__socials-link" href="https://www.linkedin.com/">LinkedIn</a></li>
                     </ul>
-                </nav>
-                <div class="mobile-menu__address">
-                    <a class="mobile-menu__tel" href="tel:+380961111111">
-                        +38 096 111 11 11</a>
-                    <a class="mobile-menu__mail" href="mailto:info@devstudio.com">
-                        info@devstudio.com</a>
                 </div>
-                <ul class="mobile-menu__socials-list">
-                    <li><a class="mobile-menu__socials-link" href="https://www.instagram.com/">Instagram <span class="vertical-line">|</span></a></li>
-                    <li><a class="mobile-menu__socials-link" href="https://www.twitter.com/">Twitter <span class="vertical-line">|</span></a></li>
-                    <li><a class="mobile-menu__socials-link" href="https://www.facebook.com/">Facebook <span class="vertical-line">|</span></a></li>
-                    <li><a class="mobile-menu__socials-link" href="https://www.linkedin.com/">LinkedIn</a></li>
-                </ul>
             </div>
         </div>
         <hr>

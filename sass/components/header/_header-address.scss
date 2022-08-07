@@ -8,6 +8,7 @@
     }
 
     @media screen and (min-width: 1200px) {
+        align-items: center;
         flex-direction: row;
         gap: 30px;
     }
@@ -24,6 +25,10 @@
             &:hover,
             &:focus {
                 color: $accent-color;
+            }
+
+             @media screen and (min-width: 768px) {
+                line-height: 0.9;
             }
         }
     
